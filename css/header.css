@@ -6,7 +6,6 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        overflow: hidden;
 }
 body{
         background-color: rgb(227, 219, 219);
@@ -19,6 +18,11 @@ body{
         flex-wrap: wrap;
         position: fixed;
         z-index: 999;
+        transform: translate(-100%,0);
+        transition: transform .4s ease;
+}
+.principal_header.is-active{
+        transform: translate(0,0);
 }
 .presentacion_club{
         width: 100%;
@@ -28,7 +32,7 @@ body{
         justify-content: center;
 }
 .presentacion_club img{
-        width: 50px;
+        width: 150px;
         padding: 10px;
 }
 .presentacion_club h1{
@@ -84,14 +88,18 @@ body{
         background: linear-gradient(to right, #8484ef, #29208b, #e1b90a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 .hamburger{
-        display: flex;
         position: fixed;
         z-index: 1000;
         bottom: 1vh;
         left: 1vw;
-        border-radius: 50%;
-        background-color: #1919a1;
         width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1919a1;
 }
 
 
