@@ -9,6 +9,7 @@
 }
 body{
         background-color: rgb(227, 219, 219);
+        position: relative;
 }
 .principal_header{
         background-color: rgba(13, 43, 214, 0.80);

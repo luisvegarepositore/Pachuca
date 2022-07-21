@@ -6,15 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/7e5b2d153f.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link rel="shortcut icon" href="./img/escudo_pachuca.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/swiper.css">
         <title>Pachuca Oro | Inicio</title>
 </head>
 <body>
         
     <header class="principal_header">
         <div class="presentacion_club">
-            <img src="../img/escudo_pachuca.png" alt="" class="logo">
+            <img src="./img/escudo_pachuca.png" alt="" class="logo">
             <h1 class="nombre_escuela">P A C H U C A  O R O</h1>
         </div>
         <div class="nav">
@@ -54,10 +56,34 @@
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <p>Lorem*100
-        
-      </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="cardview">
+                <img src="img/equipo_sub12.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardview">
+                <img src="img/partido_sub10.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cardview">
+                <img src="img/partido_sub12.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
         <footer></footer>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="./js/index_dom.js" type="module"></script>
 </body>
 </html>
