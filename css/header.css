@@ -8,7 +8,7 @@
         box-sizing: border-box;
 }
 body{
-        background-color: rgb(227, 219, 219);
+        background-color: rgb(231, 102, 102);
         position: relative;
 }
 .principal_header{
@@ -104,9 +104,50 @@ body{
 }
 
 
-@media (max-width:700px){
+@media (min-width:800px){
+        .hamburger{
+                display: none;
+        }
+        .principal_header{
+                background: #0f0c29;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #1414e8, #29208b, #1c1ce0);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #1818e6, #29208b, #0a15e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+                transform: translate(0,0);
+                transition: none;
+                height: 100px;
+        }
+        .presentacion_club{
+                width: 35%;
+                height: 100%;
+
+        }
+        .presentacion_club img{
+                width: 75px;
+                padding: 10px;
+        }
         .presentacion_club h1{
                 font-size: 15px;
-                letter-spacing: 1px;
+                color: white;
+                letter-spacing: 5px;
         }
+        .nav{
+                width: 65%;
+                display: flex;
+                flex-wrap: wrap;
+        }
+
+        .menu_nav ul li{
+                width: 25%;
+        }
+        .menu_nav ul li a{
+                font-size: 12px;
+        }
+        .sci li::before{
+                font-size: 1vh;
+            }
+        .sci li a{
+                
+                width: 25px;
+                height: 25px;
+            }
 }
