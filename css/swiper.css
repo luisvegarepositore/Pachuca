@@ -1,35 +1,43 @@
 .swiper {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background-color: blue;
-        overflow: hidden;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: rgb(127, 111, 229);
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+  overflow: hidden;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(127, 111, 229);
+   /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; 
+}
+.cardview{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: red;
+}
 .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-      }
+  display: block;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  background-color: aqua;
+}
+.swiper-slide .descripcion{
+  background-color: rgb(5, 12, 98);
+  color: white;
+  height: 100%;
+}
