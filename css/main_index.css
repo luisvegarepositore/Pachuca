@@ -1,7 +1,7 @@
 .main{
         background-color: aliceblue;
         width: 100%;
-        padding: 15px;
+      
 }
 .card_uniforme{
         border: solid 1px black;
@@ -28,5 +28,61 @@
         height: 40px;
 }
 .descripcion_uniforme{
+        font-family: 'Rowdies', cursive;
         padding: 3px;
+}
+
+.jornada{
+        font-family: 'Outfit', sans-serif;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+}
+.seccion_partidos{
+        width: 100%;
+}
+.lista_partidos{
+        display: flex;
+        flex-wrap: wrap;
+}
+.card_partido{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #0f0c29;
+        font-family: 'Mochiy Pop One', sans-serif;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        padding: 3px;
+        border-radius: 3px;
+}
+.fecha_partido{
+        width: 100%;
+}
+.local_escudo, .datos_partido,.visita{
+        width: 33%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+}
+.card_partido img{
+        width: 150px;
+}
+.datos_partido h4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1px;
+}
+.datos_partido a{
+        text-decoration: none;
+        color:white
+}
+.datos_partido a:hover{
+        color: pink;
 }
