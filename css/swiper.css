@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: blue;
   overflow: hidden;
 }
 .swiper-slide {
@@ -27,14 +26,12 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: red;
 }
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 75%;
   object-fit: cover;
-  background-color: aqua;
 }
 .swiper-slide .descripcion{
   background-color: rgb(5, 12, 98);

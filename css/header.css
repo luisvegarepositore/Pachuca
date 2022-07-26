@@ -32,6 +32,11 @@ body{
         align-items: center;
         justify-content: center;
 }
+.nombre_escuela{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
 .imagen_escudo{
         display: flex;
         width: 100%;
@@ -124,10 +129,10 @@ body{
                 width: 75px;
                 padding: 10px;
         }
-        .presentacion_club h1{
-                font-size: 15px;
-                color: white;
-                letter-spacing: 5px;
+        .nombre_escuela{
+                width: 100%;
+                background-color: #0f0c29;
+                color: #0f0c29;
         }
         .nav{
                 width: 65%;
