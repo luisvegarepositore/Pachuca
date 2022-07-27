@@ -25,12 +25,15 @@ body{
 .principal_header.is-active{
         transform: translate(0,0);
 }
-.principal_header h2{
-        display: flex;
-        color: white;
+.follow{
         width: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
+}
+.follow *{
+        margin: 0 5px;
 }
 .presentacion_club{
         width: 100%;
