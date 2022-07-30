@@ -43,6 +43,6 @@
   font-size: 11px;
   position: relative;
   z-index: 501;
-  bottom: 0vh;
+  top:85vh;
   padding-bottom: 50px;
 }
