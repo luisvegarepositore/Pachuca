@@ -17,15 +17,26 @@
         display: flex;
         justify-content: center;
 }
+.lista_jugadores_cuarta{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+}
+.seccion_posicion{
+        width: 100%;
+        background-color: red;
+}
 .card_jugador{
         position: relative;
-        width: 120px;
-        height: 100px;
+        width: 200px;
+        height: 150px;
         display: inline-block;
         justify-content: flex-start;
         align-items: center;
         border-radius: 20px;
         background-color: aqua;
+        margin: 5px;
 }
 .card_jugador::before{
         content: '';
@@ -49,16 +60,16 @@
 .card_jugador img{
         position: absolute;
         bottom: 0;
-        left: 45%;
+        left: 40%;
         transform: translateX(-50%);
         max-width: 90%;
-        height: 100px;
+        height: 120px;
         transition: 0.5s;
 }
 .card_jugador:hover img{
         z-index: 0;
         left: 81.5%;
-        height: 110px;
+        height: 130px;
         filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
 }
 .card_jugador:hover .descripcion {
@@ -66,9 +77,8 @@
 }
 .card_jugador .descripcion {
         position: relative;
-        width: 50%;
-        left: 10%;
-        padding: 20px 20px 20px 40px;
+        width: 60%;
+        padding: 20px 20px 20px 20px;
         opacity: 0;
         visibility: hidden;
         transition: 0.5s;
