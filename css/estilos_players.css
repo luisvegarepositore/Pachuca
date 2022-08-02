@@ -1,46 +1,90 @@
 *{
         margin: 0;
         padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        list-style: none;
         box-sizing: border-box;
 }
-.lista_jugadores_cuarta{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+
+.players_header{
+        width: 100%;
+        background: linear-gradient(rgba(0, 17, 255, 0.713), rgb(0, 17, 255,0.713)), url("../img/fondo ruido3.png");
 }
-.card_jugador{
-        width: 150px;
-        height: 200px;
-        background:url("../img/fondo_campo.jpg");
-        background-size: cover;
-        border-radius: 15px;
+.players_header .titulo_players{
+        width: 100%;
         display: flex;
         justify-content: center;
-        text-align: center;
 }
-.card_jugador .descripcion{
-        display: none;
-        background-color: rgb(0, 0, 0,0.8);
-        padding: 10px;
+.card_jugador{
+        position: relative;
+        width: 120px;
+        height: 100px;
+        display: inline-block;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 20px;
+        background-color: aqua;
 }
-.descripcion{
-        display: block;
+.card_jugador::before{
+        content: '';
+        position: absolute;
+        bottom: -12%;
+        left: 2%;
+        width: 95%;
+        height: 90%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+        filter: blur(10px);
 }
-.card_jugador img{
-        width: 100%;
-        transition: all 1s;
+.card_jugador{
+        background: url("../img/fondo_campo.jpg");
+        background-size: cover;
 }
-/* .card_jugador img:hover{
-        transform: translate(20%,-5%);
-        filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
-} */
+.card_jugador:hover{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fondo_campo.jpg");
+}
 
-@media (min-width:1060px) {
-        .card_jugador{
-                width: 150px;
-        }
-        .card_jugador *:hover{
-                transform: translate(20%,-5%);
-                filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
-        }
+.card_jugador img{
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        transform: translateX(-50%);
+        max-width: 90%;
+        height: 100px;
+        transition: 0.5s;
 }
+.card_jugador:hover img{
+        z-index: 0;
+        left: 81.5%;
+        height: 110px;
+        filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
+}
+.card_jugador:hover .descripcion {
+        z-index: 10;
+}
+.card_jugador .descripcion {
+        position: relative;
+        width: 50%;
+        left: 10%;
+        padding: 20px 20px 20px 40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+}
+.card_jugador h1 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: white;
+}
+.card_jugador:hover .descripcion {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+}
+.card_jugador .descripcion h2 {
+        color: white;
+        font-size: 0.9em;
+        line-height: 1em;
+    }
