@@ -1,0 +1,46 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+.lista_jugadores_cuarta{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+.card_jugador{
+        width: 150px;
+        height: 200px;
+        background:url("../img/fondo_campo.jpg");
+        background-size: cover;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}
+.card_jugador .descripcion{
+        display: none;
+        background-color: rgb(0, 0, 0,0.8);
+        padding: 10px;
+}
+.descripcion{
+        display: block;
+}
+.card_jugador img{
+        width: 100%;
+        transition: all 1s;
+}
+/* .card_jugador img:hover{
+        transform: translate(20%,-5%);
+        filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
+} */
+
+@media (min-width:1060px) {
+        .card_jugador{
+                width: 150px;
+        }
+        .card_jugador *:hover{
+                transform: translate(20%,-5%);
+                filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
+        }
+}
