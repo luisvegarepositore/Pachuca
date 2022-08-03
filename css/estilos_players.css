@@ -27,7 +27,8 @@ body{
 }
 .opciones_categorias ul{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        
 }
 .opciones_categorias ul li{
         margin: 5px;
@@ -35,9 +36,12 @@ body{
         background-color: rgb(13, 35, 240);
         color: rgb(255, 255, 255);
         transition: all 0.5s;
+        cursor:pointer
+        
 }
 .opciones_categorias ul li:hover{
         background-color: black;
+        
 }
 .lista_jugadores_cuarta{
         display: flex;
@@ -47,6 +51,8 @@ body{
 }
 .seccion_posicion{
         width: 100%;
+        border-top: solid 1px black;
+        margin-top: 10px;
 }
 .seccion_posicion h1{
         margin-left: 15px;
