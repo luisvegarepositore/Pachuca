@@ -25,11 +25,11 @@
 }
 .seccion_posicion{
         width: 100%;
-        background-color: red;
+        
 }
 .card_jugador{
         position: relative;
-        width: 200px;
+        width: 180px;
         height: 150px;
         display: inline-block;
         justify-content: flex-start;
