@@ -127,30 +127,32 @@ body{
                 background: linear-gradient(to right, #1818e6, #29208b, #0a15e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
                 transform: translate(0,0);
                 transition: none;
-                height: 100px;
+                height: auto;
+                position: relative;
+                flex-wrap: nowrap;
         }
         .presentacion_club{
                 width: 35%;
                 height: 100%;
-
         }
         .presentacion_club img{
                 width: 75px;
                 padding: 10px;
         }
+        .follow{
+                display: none;
+        }
         .nombre_escuela{
                 width: 100%;
-                background-color: #0f0c29;
-                color: #0f0c29;
         }
         .nav{
                 width: 65%;
                 display: flex;
-                flex-wrap: wrap;
         }
 
         .menu_nav ul li{
                 width: 25%;
+                height: 100px;
         }
         .menu_nav ul li a{
                 font-size: 12px;

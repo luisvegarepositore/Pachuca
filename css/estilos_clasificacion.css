@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:wght@500&family=Mochiy+Pop+One&family=Mukta:wght@800&family=Outfit:wght@400;500&family=Rowdies&display=swap');
+.tabla{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        border: solid 1px black;
+        margin: 5px;
+}
+.datostabla{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+}
+.datostabla img{
+        width: 15%;
+}
+.table{
+        width: 100%;
+        border-collapse: collapse;
+}
+
+th{
+        font-family: 'Rowdies', cursive;
+        padding: 5px;
+}
+.table thead tr th{
+        background-color: rgb(13, 128, 0);
+}
+tbody td{
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        margin: 10px;
+}
+.casillaequipo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.escudoequipo{
+        width: 30px;
+}

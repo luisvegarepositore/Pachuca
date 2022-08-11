@@ -11,6 +11,9 @@
 body{
         background-color: aliceblue;
 }
+.presentacion_jugadores img{
+        display: none;
+}
 .players_header{
         width: 100%;
         background: linear-gradient(rgba(0, 17, 255, 0.84), rgb(0, 17, 255,0.84)), url("../img/fondo ruido3.png");
@@ -106,6 +109,7 @@ body{
         left: 81.5%;
         height: 130px;
         filter: drop-shadow(-20px -10px 5px rgba(8, 8, 8, 0.5));
+        display: none;
 }
 .card_jugador:hover .descripcion {
         z-index: 10;
@@ -132,4 +136,4 @@ body{
         color: white;
         font-size: 0.9em;
         line-height: 1em;
-    }
+}
